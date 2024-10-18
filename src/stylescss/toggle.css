@@ -1,0 +1,63 @@
+.theme-toggle {
+    background: none;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0px;
+    cursor: pointer;
+    border: 0px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 2rem;
+  }
+  
+  .theme-toggle:hover {
+    /* background-color: var(--text-color); */
+    color: var(--background-color);
+    
+  }
+  
+
+  .mode-text {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease;
+    font-size: 1rem;
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+    text-wrap: nowrap;
+    font-family: "Poppins", sans-serif;
+    font-weight:300;
+    font-style: normal;
+  }
+  
+  .theme-toggle:hover .mode-text {
+    visibility: visible;
+    opacity: 10;
+    color: rgb(0, 0, 0);
+  }
+
+  [data-theme="dark"] .theme-toggle:hover .mode-text{
+    color: #ffffff;
+  }
+
+
+
+  /* Default (Light Mode) */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+  }
+  
+  /* Dark Mode */
+  [data-theme="dark"] {
+    --background-color: #1d1f21;
+    --text-color: #c9d1d9;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  

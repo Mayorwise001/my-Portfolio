@@ -1,0 +1,153 @@
+:root {
+    --dark-hero-background: linear-gradient(
+        rgba(30, 30, 30, 0.879), /* Dark gradient - dark grey */
+        rgba(0, 0, 0, 0.847)
+    ), url('../images/bck.jpg');
+    
+    --light-hero-background: linear-gradient(
+        rgba(249, 244, 244, 0.945), /* Light gradient - white */
+        rgba(222, 215, 215, 0.953)
+    ), url('../images/bck.jpg'); /* Use a different background image for dark mode if needed */
+
+
+    --light-text-color: #000000; /* Black text for light mode */
+    --dark-text-color: #ffffff;  /* White text for dark mode */
+  }
+
+
+
+
+.hero {
+
+      background: var(--light-hero-background);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    color: var(--light-text-color); /* Black text in light mode */
+    transition: 0.73s ease-in-out; /* Smooth background transition */
+  
+    
+  }
+  
+/* Hero background in dark mode */
+[data-theme="dark"] .hero {
+  background: var(--dark-hero-background);
+  color: var(--dark-text-color); /* White text in dark mode */
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 2s forwards;
+  transition: 0.73s ease-in-out; /* Smooth background transition */
+
+}
+
+
+  .hero-text{
+    flex: 1; /* Takes up the available space on the left */
+  justify-content:end; /* Vertically center text */
+  align-items:end; /* Horizontally center text */
+  text-align: center; 
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+  transform: skew(-10deg) rotate(-2deg); 
+
+  }
+
+  .items-right {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: flex-end;   /* Aligns them to the right */
+    position: absolute; /* Positioning on the right */
+    top: 20px; /* Adjust based on desired spacing from the top */
+    right: 90px; /* Adjust based on desired spacing from the right */
+  }
+  
+  .items-right > * {
+    margin-bottom: 10px; /* Adds spacing between each item in the vertical column */
+  }
+  
+ 
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
+  /* Container for the roles */
+.developer-roles {
+  position: relative;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  color: var(--light-text-color); /* Black text in light mode */
+  height: 50px; /* Adjust based on the font size */
+  overflow: hidden; /* Hide overflowing text */
+  
+}
+[data-theme="dark"] .developer-roles {
+  position: relative;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+
+  color: var(--dark-text-color); /* White text in dark mode */
+  height: 50px; /* Adjust based on the font size */
+  overflow: hidden; /* Hide overflowing text */
+}
+
+/* Individual role styles */
+ .role {
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transform: skew(-10deg) rotate(-2deg); /* Same effect on roles */
+   animation: fadeInOut 12s infinite; /* Infinite loop of fading animation */
+
+ 
+ }  
+
+/* First role starts visible */
+ .role-1 {
+  animation-delay: 0s;
+  color: rgb(168, 24, 24);
+  
+} 
+
+/* Second role appears after first one */
+ .role-2 {
+  animation-delay: 4s; /* Half of the total animation duration */
+  color: rgb(12, 122, 233);
+} 
+ .role-3{
+  animation-delay: 8s; /* 2nd Half of the total animation duration */
+  color: rgb(211, 155, 14);
+} 
+
+/* Animation keyframes */
+@keyframes fadeInOut {
+  0%, 40% { 
+    opacity: 0; 
+    transform: translateY(100%); 
+  }
+  10%, 30% { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+  40%, 100% { 
+    opacity: 0; 
+    transform: translateY(-100%); 
+  }
+}
+
+
+
