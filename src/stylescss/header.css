@@ -12,8 +12,8 @@
 
     --light-text-color: #000000; /* Black text for light mode */
     --dark-text-color: #ffffff;  /* White text for dark mode */
-  }
 
+  }
 
 
 
@@ -22,7 +22,7 @@
       background: var(--light-hero-background);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 98vh;
     display: flex;
     align-items:center;
     opacity: 0;
@@ -40,7 +40,7 @@
   background-size: cover;
   background-position: center;
   animation: fadeIn 2s forwards;
-  transition: 0.73s ease-in-out; /* Smooth background transition */
+  transition: 0.73s ease-in-out; /*Smooth background transition*/
 
 }
 
@@ -70,18 +70,12 @@
     margin-bottom: 10px; /* Adds spacing between each item in the vertical column */
   }
   
- 
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
-  }
-
+  
   html {
     scroll-behavior: smooth;
   }
   
-
+  
   /* Container for the roles */
 .developer-roles {
   position: relative;
@@ -98,26 +92,26 @@
   font-size: 2rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
-
+  
   color: var(--dark-text-color); /* White text in dark mode */
   height: 50px; /* Adjust based on the font size */
   overflow: hidden; /* Hide overflowing text */
 }
 
 /* Individual role styles */
- .role {
+.role {
   position: absolute;
   left: 0;
   right: 0;
   opacity: 0;
   transform: skew(-10deg) rotate(-2deg); /* Same effect on roles */
-   animation: fadeInOut 12s infinite; /* Infinite loop of fading animation */
-
- 
- }  
+  animation: fadeInOut 12s infinite; /* Infinite loop of fading animation */
+  
+  
+}  
 
 /* First role starts visible */
- .role-1 {
+.role-1 {
   animation-delay: 0s;
   color: rgb(168, 24, 24);
   
@@ -125,14 +119,57 @@
 
 /* Second role appears after first one */
  .role-2 {
-  animation-delay: 4s; /* Half of the total animation duration */
+   animation-delay: 4s; /* Half of the total animation duration */
   color: rgb(12, 122, 233);
 } 
  .role-3{
-  animation-delay: 8s; /* 2nd Half of the total animation duration */
-  color: rgb(211, 155, 14);
-} 
+   animation-delay: 8s; /* 2nd Half of the total animation duration */
+   color: rgb(211, 155, 14);
+  } 
+  
+  
+  .scroll-icon {
+    position: absolute;
+    bottom: 20px; /* Adjust based on how low you want the arrow */
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+  
+  .scroll-icon img{
+    width: 140px; /* Adjust size as needed */
+    animation: bounce 2s infinite;
+  }
+  
+   a{
+    text-decoration: none;
+     color: rgb(0, 0, 0);
+    }
+    
+    [data-theme="dark"] a{ 
+     text-decoration: none;
+     color: white;
+    } 
+    
+    /* Animation keyframes for Bounce */
+    @keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
 
+/* Key frame for fadein */
+ @keyframes fadeIn {
+   to {
+     opacity: 1;
+   }
+ }
 /* Animation keyframes */
 @keyframes fadeInOut {
   0%, 40% { 

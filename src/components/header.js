@@ -1,6 +1,12 @@
 import { motion } from 'framer-motion';
 import ThemeToggle from './toggletheme';
-import '../stylescss/header.css'
+import '../stylescss/header.css';
+import photo from '../images/downarrow4b.png'
+import About from './About.js'
+import '../stylescss/about.css'
+
+import Icon from '@mdi/react';
+import { mdiChevronDown } from '@mdi/js';
 
 const headerVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -41,10 +47,25 @@ const HeroSection = () => {
       </div>
       <div className="items-right">
       <ThemeToggle />
+      <div>
+      <a href='#about'>
+      About
+        </a>
+      </div>
       <div>Hello</div>
       <div>Hello</div>
     </div>
+    <div class="scroll-icon">
+      <a href='#about'>
+        <img src={photo} alt="Scroll Icon"/>
+        </a>
+        </div> 
+
+        <div className='About' id='about'>
+        <About/>   
+        </div>
     </header>
+
   );
 };
 
