@@ -1,0 +1,88 @@
+.skillsSection {
+    background-color: #1c1c1c;
+    color: #d6d6d6;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .skillsSection h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .skillsSection hr {
+    border: 1px solid #d6d6d6;
+    margin: 10px auto 30px;
+    width: 80%;
+  }
+  
+  .skillsCategories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .skillsCategory {
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+  }
+  
+  .skillsCategory h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #d6d6d6;
+  }
+  
+  .skillsItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .skillItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #d6d6d6;
+  }
+  
+  .icon {
+    font-size: 2em;
+    margin-bottom: 5px;
+  }
+  
+  .skillItem span {
+    font-size: 0.9em;
+  }
+  
+  .languages {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.2em;
+    color: #d6d6d6;
+    margin-top: 30px;
+  }
+  
+  .languages p {
+    margin: 0;
+  }
+  
+  .languages span {
+    margin-right: 15px;
+  }
+  
+
+  .skills {
+    position: absolute;
+    top: calc(100% + 20px); /* Adjust 20px to control spacing */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+}

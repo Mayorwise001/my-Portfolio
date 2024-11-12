@@ -4,10 +4,8 @@ import '../stylescss/header.css';
 import photo from '../images/downarrow4b.png'
 import About from './About.js'
 import '../stylescss/about.css'
-
-import Icon from '@mdi/react';
-import { mdiChevronDown } from '@mdi/js';
-
+import { useState, useEffect } from 'react';
+import SkillsSection from '../components/SkillsSection.js'
 const headerVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
@@ -18,6 +16,39 @@ const headerVariants = {
 };
 
 const HeroSection = () => {
+  const [aboutVisible, setAboutVisible] = useState(false);
+  const [isAboutActive, setIsAboutActive] = useState(false);
+  const [isAboutVisible, setIsAboutVisible] = useState(false);
+  const handleScrollIconClick = () => {
+    setAboutVisible(true);
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const aboutSection = document.getElementById('about');
+      if (aboutSection) {
+        const rect = aboutSection.getBoundingClientRect();
+        // Check if the about section is in view
+        const inView = rect.top >= 0 && rect.bottom <= window.innerHeight;
+        setIsAboutActive(inView);
+
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+          setIsAboutVisible(true);
+        } else {
+          setIsAboutVisible(false);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the scroll event listener on component unmount
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
     <header className="hero">
       <div className="hero-text">
@@ -48,20 +79,27 @@ const HeroSection = () => {
       <div className="items-right">
       <ThemeToggle />
       <div>
-      <a href='#about'>
+      <a href='#about' style={{ color: isAboutActive ? 'red' : 'inherit' }}>
       About
         </a>
       </div>
       <div>Hello</div>
       <div>Hello</div>
     </div>
-    <div class="scroll-icon">
+    <div class="scroll-icon" onClick={handleScrollIconClick}>
       <a href='#about'>
         <img src={photo} alt="Scroll Icon"/>
         </a>
-        </div> 
+        </div>
 
-        <div className='About' id='about'>
+        <div className={`about ${aboutVisible ? 'visible' : ''}`}  id='about'>
+        <About/>   
+        </div>
+
+        <div className='skills'>
+          <SkillsSection/>
+        </div>
+        <div className={`about ${aboutVisible ? 'visible' : ''}`}  id='about'>
         <About/>   
         </div>
     </header>

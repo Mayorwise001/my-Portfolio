@@ -1,7 +1,29 @@
-.About{
+
+
+
+.about{
     position: absolute;
-    bottom: -120px; /* Adjust based on how low you want the arrow */
+    bottom: -190px; /* Adjust based on how low you want the arrow */
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
+    flex: 1;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    align-items:end;
+    z-index: -1; /* Lower z-index to push it behind */
+    
+    
+}
+
+
+.about>p{
+    margin-left: 30%;
+    margin-right: 30%;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+}
+
+.about h2{
+font-size: 38px;
 }

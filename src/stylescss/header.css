@@ -4,31 +4,28 @@
         rgba(0, 0, 0, 0.847)
     ), url('../images/bck.jpg');
     
-    --light-hero-background: linear-gradient(
-        rgba(249, 244, 244, 0.945), /* Light gradient - white */
-        rgba(222, 215, 215, 0.953)
+    --light-hero-background: linear-gradient(to bottom, rgba(240, 234, 234, 0.762), #f2f2f2
     ), url('../images/bck.jpg'); /* Use a different background image for dark mode if needed */
-
-
     --light-text-color: #000000; /* Black text for light mode */
     --dark-text-color: #ffffff;  /* White text for dark mode */
-
   }
 
 
 
 .hero {
-
-      background: var(--light-hero-background);
+    background: var(--light-hero-background);
     background-size: cover;
     background-position: center;
     height: 98vh;
+    width: 100vw; /* Set width to full viewport width */
+    max-width: 100%; /* Ensures it doesn’t exceed 100% of container */
     display: flex;
     align-items:center;
     opacity: 0;
     animation: fadeIn 2s forwards;
     color: var(--light-text-color); /* Black text in light mode */
     transition: 0.73s ease-in-out; /* Smooth background transition */
+    overflow-x: hidden; 
   
     
   }
@@ -61,9 +58,10 @@
     display: flex;
     flex-direction: column; /* Stacks items vertically */
     align-items: flex-end;   /* Aligns them to the right */
-    position: absolute; /* Positioning on the right */
-    top: 20px; /* Adjust based on desired spacing from the top */
+    position: fixed; /* Positioning on the right */
+    top: 130px; /* Adjust based on desired spacing from the top */
     right: 90px; /* Adjust based on desired spacing from the right */
+    font-size: 20px;
   }
   
   .items-right > * {
@@ -92,7 +90,6 @@
   font-size: 2rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
-  
   color: var(--dark-text-color); /* White text in dark mode */
   height: 50px; /* Adjust based on the font size */
   overflow: hidden; /* Hide overflowing text */
@@ -150,7 +147,37 @@
      text-decoration: none;
      color: white;
     } 
+
+ .about{
+  background-color: #f2f2f2;
+color: black;
+min-width: 100%;
+flex: 1;
+scroll-margin-top: 200px;
+ }
     
+ [data-theme="dark"]  .about{
+  background-color: #000000;
+color: rgb(255, 255, 255);
+min-width: 100%;
+margin-bottom: 100px;
+ }
+
+ .skills {
+  position: absolute;
+  top: calc(100% + 500px); /* Adjust 20px to control spacing */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin-left: 2%;
+  margin-right: 10%;
+}
+
+
+
+
+
     /* Animation keyframes for Bounce */
     @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
