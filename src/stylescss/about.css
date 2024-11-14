@@ -127,16 +127,14 @@ font-size: 38px;
 
     .about{
         position: absolute;
-        bottom: -490px; /* Adjust based on how low you want the arrow */
-        left: 50%;
-        transform: translateX(-50%);
+        bottom: -380px; /* Adjust based on how low you want the arrow */
         cursor: pointer;
-        flex: 1;
         text-align: center;
         font-family: "Roboto", "Sans-serif";
         font-weight: 300;
         font-style: normal;
         align-items:end;
+        width: 107%;
         z-index: -1; /* Lower z-index to push it behind */       
     }
 
@@ -171,5 +169,11 @@ font-size: 38px;
         width: 100px; /* Adjust size as needed */
         animation: bounce 2s infinite;
       }
+
+      .about{
+        background-color: #f2f2f2;
+      color: black;
+      scroll-margin-top: 450px;
+       }
   
   }
