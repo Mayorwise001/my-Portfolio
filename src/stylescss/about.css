@@ -55,17 +55,7 @@ font-size: 38px;
       font-size: 16px;
     }
   }
-  
-  @media (max-width: 480px) {
-    .items-right {
-      top: 80px;
-      right: 0;
-    }
-  
-    .items-right > * {
-      font-size: 14px;
-    }
-  }
+
 
   @media (max-width: 929px){
     .about{
@@ -130,7 +120,7 @@ font-size: 38px;
         z-index: -1; /* Lower z-index to push it behind */       
     }
   }
-  @media (max-width: 463px) {
+  @media (max-width: 420px) {
     .hero-text {
       font-size: 18px;
     }
@@ -149,4 +139,34 @@ font-size: 38px;
         align-items:end;
         z-index: -1; /* Lower z-index to push it behind */       
     }
+
+
+    .hero {
+        background: var(--light-hero-background);
+        background-size: cover;       /* Ensures the background image covers the full container */
+  background-position: center;   /* Centers the background image */
+  background-repeat: no-repeat;  /* Prevents the background from repeating */
+  height: 100vh;                 /* Sets the height to full viewport height */
+  width: 170vw;                  /* Sets the width to full viewport width */
+  display: flex;
+        align-items:center;
+        opacity: 0;
+        animation: fadeIn 2s forwards;
+        color: var(--light-text-color); /* Black text in light mode */
+        transition: 0.73s ease-in-out; /* Smooth background transition */
+  
+        font-family: "Roboto", "Sans-serif";
+      
+        
+      }
+
+      html, body {
+        margin: 0;
+        padding-right: 0;
+        width: 105%;
+        height: 100%;
+        overflow-x: hidden; /* Ensures no horizontal scrolling */
+      }
+
+  
   }
