@@ -167,6 +167,9 @@ font-size: 38px;
         height: 100%;
         overflow-x: hidden; /* Ensures no horizontal scrolling */
       }
-
+      .scroll-icon img{
+        width: 100px; /* Adjust size as needed */
+        animation: bounce 2s infinite;
+      }
   
   }
