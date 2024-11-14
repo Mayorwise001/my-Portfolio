@@ -1,17 +1,25 @@
 .skillsSection {
-    background-color: #1c1c1c;
-    color: #d6d6d6;
+  background-color: #f2f2f2;
+  color: #1c1c1c;
     padding: 40px;
     text-align: center;
+    z-index: -1;
+    font-family: "Roboto", "Sans-serif";
   }
   
   .skillsSection h2 {
-    font-size: 2em;
+    font-size: 38px;
     margin-bottom: 10px;
+    font-family: "Roboto", "Sans-serif";
   }
   
   .skillsSection hr {
     border: 1px solid #d6d6d6;
+    margin: 10px auto 30px;
+    width: 80%;
+  }
+  [data-theme="dark"] .skillsSection hr {
+    border: 1px solid rgb(27, 198, 67);
     margin: 10px auto 30px;
     width: 80%;
   }
@@ -24,16 +32,52 @@
   }
   
   .skillsCategory {
-    background-color: #2d2d2d;
+    background-color: #ffffff;
     border-radius: 10px;
     padding: 20px;
     width: 250px;
+    color: #1c1c1c;
+    border: 1px solid black; 
+  }
+
+  
+  [data-theme="dark"] .skillsCategory {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    color: #ffffff;
+    border: 1px solid rgb(27, 198, 67); 
+  }
+
+
+  [data-theme="dark"] .skillsSection {
+    background-color: #000000;
+    color: #1c1c1c;
+    padding: 40px;
+    text-align: center;
+    z-index: -1;
+    color: white; 
   }
   
+  [data-theme="dark"] .skillsCategory {
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    color: #ffffff;
+
+  }
   .skillsCategory h3 {
     font-size: 1.2em;
     margin-bottom: 15px;
-    color: #d6d6d6;
+    color: #1c1c1c;
+  }
+  [data-theme="dark"] .skillsCategory h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-family: "Roboto", "Sans-serif";
   }
   
   .skillsItems {
@@ -41,31 +85,52 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+
   }
   
   .skillItem {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #d6d6d6;
+    color: #1c1c1c;
   }
   
   .icon {
     font-size: 2em;
     margin-bottom: 5px;
+ 
+  }
+  [data-theme="dark"] .icon {
+    font-size: 2em;
+    margin-bottom: 5px;
+    color: rgb(113, 226, 7);
   }
   
   .skillItem span {
     font-size: 0.9em;
   }
+  [data-theme="dark"] .skillItem span {
+    font-size: 0.9em;
+    color:#ffffff;
+  }
   
   .languages {
-    background-color: #1c1c1c;
+    background-color: #ffffff;
     border-radius: 10px;
     padding: 10px;
     font-size: 1.2em;
-    color: #d6d6d6;
+
     margin-top: 30px;
+    color: #1c1c1c;
+  }
+  [data-theme="dark"] .languages {
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid rgb(27, 198, 67);
+    margin-top: 30px;
+    color: #ffffff;
   }
   
   .languages p {
@@ -85,4 +150,5 @@
     text-align: center;
     font-family: "Poppins", sans-serif;
     width: 100%;
+    background-color: #ffffff;
 }

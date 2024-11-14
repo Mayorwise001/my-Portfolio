@@ -2,8 +2,6 @@
 import React from 'react';
 import styles from '../stylescss/SkillsSection.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faHtml5, faCss3Alt, faSass, faJsSquare, faReact, faNode, faGitAlt, faGithub, faFigma, faLinux, faAdobe, faCube } from '@fortawesome/free-solid-svg-icons';
-// import { faDatabase, faVial, faPaintBrush, faMagic, faFire } from '@fortawesome/free-solid-svg-icons';
 
 import { faHtml5, faCss3Alt, faSass, faJsSquare, faReact, faNode, faGitAlt, faGithub, faFigma, faLinux, } from '@fortawesome/free-brands-svg-icons';
 import { faCube, faDatabase, faVial, faPaintBrush, faMagic, faFire } from '@fortawesome/free-solid-svg-icons';
@@ -60,7 +58,7 @@ const SkillsSection = () => {
       </div>
 
       <div className={styles.languages}>
-        <p>I speak <span>English 🇬🇧</span> <span>Portuguese 🇧🇷</span> <span>French 🇫🇷</span></p>
+        <p>I speak <span>English</span></p>
       </div>
     </section>
   );

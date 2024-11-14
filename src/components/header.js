@@ -98,10 +98,7 @@ const HeroSection = () => {
 
         <div className='skills'>
           <SkillsSection/>
-        </div>
-        <div className={`about ${aboutVisible ? 'visible' : ''}`}  id='about'>
-        <About/>   
-        </div>
+        </div>  
     </header>
 
   );
