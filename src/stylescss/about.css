@@ -163,7 +163,7 @@ font-size: 38px;
       html, body {
         margin: 0;
         padding-right: 0;
-        width: 105%;
+        width: 104%;
         height: 100%;
         overflow-x: hidden; /* Ensures no horizontal scrolling */
       }
