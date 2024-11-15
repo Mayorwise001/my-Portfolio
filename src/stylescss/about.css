@@ -134,18 +134,19 @@ font-size: 38px;
         font-weight: 300;
         font-style: normal;
         align-items:end;
-        width: 110%;
+        width: 89%;
         z-index: -1; /* Lower z-index to push it behind */       
     }
 
 
     .hero {
         background: var(--light-hero-background);
-        background-size: cover;       /* Ensures the background image covers the full container */
-  background-position: center;   /* Centers the background image */
+        background-size:cover;       /* Ensures the background image covers the full container */
+  background-position:center;   /* Centers the background image */
   background-repeat: no-repeat;  /* Prevents the background from repeating */
   height: 100vh;                 /* Sets the height to full viewport height */
-  width: 120vw;                  /* Sets the width to full viewport width */
+  width: 100vw;                  /* Sets the width to full viewport width */
+  max-width: 100%;
   display: flex;
         align-items:center;
         opacity: 0;
@@ -181,7 +182,9 @@ font-size: 38px;
     margin-left: 20%;
     margin-right: 15%;
     font-family: "Roboto", sans-serif;
-    font-size: 18px;
+    font-size: 22px;
 }
 
+
+  
   }
