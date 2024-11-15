@@ -127,7 +127,7 @@ font-size: 38px;
 
     .about{
         position: absolute;
-        bottom: -380px; /* Adjust based on how low you want the arrow */
+        bottom: -423px; /* Adjust based on how low you want the arrow */
         cursor: pointer;
         text-align: center;
         font-family: "Roboto", "Sans-serif";
