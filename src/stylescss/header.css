@@ -2,8 +2,8 @@
 
 :root {
     --dark-hero-background: linear-gradient(
-        rgba(30, 30, 30, 0.879), /* Dark gradient - dark grey */
-        rgba(0, 0, 0, 0.847)
+        rgb(0, 0, 0), /* Dark gradient - dark grey */
+        rgb(0, 0, 0)
     ), url('../images/bck.jpg');
     
     --light-hero-background: linear-gradient(to bottom, rgba(240, 234, 234, 0.74), #ffffff

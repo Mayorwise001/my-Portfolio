@@ -153,12 +153,13 @@ font-size: 38px;
         color: var(--light-text-color); /* Black text in light mode */
         transition: 0.73s ease-in-out; /* Smooth background transition */ 
         font-family: "Roboto", "Sans-serif";    
+        overflow-x: hidden; 
       }
 
       html, body {
         margin: 0;
         padding-right: 0;
-        width: 110%;
+        width: 100%;
         height: 100%;
         overflow-x: hidden; /* Ensures no horizontal scrolling */
       }
