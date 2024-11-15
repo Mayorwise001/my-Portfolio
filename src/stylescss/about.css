@@ -127,14 +127,14 @@ font-size: 38px;
 
     .about{
         position: absolute;
-        bottom: -423px; /* Adjust based on how low you want the arrow */
+        bottom: -253px; /* Adjust based on how low you want the arrow */
         cursor: pointer;
         text-align: center;
         font-family: "Roboto", "Sans-serif";
         font-weight: 300;
         font-style: normal;
         align-items:end;
-        width: 107%;
+        width: 110%;
         z-index: -1; /* Lower z-index to push it behind */       
     }
 
@@ -145,23 +145,20 @@ font-size: 38px;
   background-position: center;   /* Centers the background image */
   background-repeat: no-repeat;  /* Prevents the background from repeating */
   height: 100vh;                 /* Sets the height to full viewport height */
-  width: 170vw;                  /* Sets the width to full viewport width */
+  width: 120vw;                  /* Sets the width to full viewport width */
   display: flex;
         align-items:center;
         opacity: 0;
         animation: fadeIn 2s forwards;
         color: var(--light-text-color); /* Black text in light mode */
-        transition: 0.73s ease-in-out; /* Smooth background transition */
-  
-        font-family: "Roboto", "Sans-serif";
-      
-        
+        transition: 0.73s ease-in-out; /* Smooth background transition */ 
+        font-family: "Roboto", "Sans-serif";    
       }
 
       html, body {
         margin: 0;
         padding-right: 0;
-        width: 104%;
+        width: 110%;
         height: 100%;
         overflow-x: hidden; /* Ensures no horizontal scrolling */
       }
@@ -171,9 +168,19 @@ font-size: 38px;
       }
 
       .about{
-        background-color: #f2f2f2;
+        background-color: #ffffff;
       color: black;
       scroll-margin-top: 450px;
        }
-  
+  .skills{
+    margin-top: 550px;
+  }
+
+  .about>p{
+    margin-left: 20%;
+    margin-right: 15%;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
   }

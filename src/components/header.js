@@ -91,7 +91,6 @@ const HeroSection = () => {
         <img src={photo} alt="Scroll Icon"/>
         </a>
         </div>
-
         <div className={`about ${aboutVisible ? 'visible' : ''}`}  id='about'>
         <About/>   
         </div>
