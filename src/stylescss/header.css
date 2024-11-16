@@ -2,7 +2,7 @@
 
 :root {
     --dark-hero-background: linear-gradient(
-        rgb(0, 0, 0), /* Dark gradient - dark grey */
+        rgba(0, 0, 0, 0.527), /* Dark gradient - dark grey */
         rgb(0, 0, 0)
     ), url('../images/bck.jpg');
     
