@@ -29,6 +29,8 @@
     justify-content: center;
     gap: 30px;
     margin-bottom: 20px;
+    flex-wrap: wrap; /* Allow wrapping of categories */
+
   }
   
   .skillsCategory {
@@ -38,6 +40,7 @@
     width: 250px;
     color: #1c1c1c;
     border: 1px solid black; 
+    margin-bottom: 20px; /* Add bottom margin for spacing */
   }
 
   
@@ -119,7 +122,6 @@
     border-radius: 10px;
     padding: 10px;
     font-size: 1.2em;
-
     margin-top: 30px;
     color: #1c1c1c;
   }
@@ -142,13 +144,3 @@
   }
   
 
-  .skills {
-    position: absolute;
-    top: calc(100% + 20px); /* Adjust 20px to control spacing */
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    width: 100%;
-    background-color: #ffffff;
-}

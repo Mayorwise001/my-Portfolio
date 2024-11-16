@@ -95,9 +95,9 @@ const HeroSection = () => {
         <About/>   
         </div>
 
-        {/* <div className='skills'>
+        { <div className='skills'>
           <SkillsSection/>
-        </div>   */}
+        </div>   }
     </header>
 
   );
