@@ -187,6 +187,9 @@ margin-bottom:0px;
     z-index: -1;
   }
 
+  [data-theme="dark"] body{
+    background-color: #000000;
+  }
  
     /* Animation keyframes for Bounce */
     @keyframes bounce {
