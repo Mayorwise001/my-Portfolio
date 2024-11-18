@@ -6,6 +6,7 @@ import About from './About.js'
 import '../stylescss/about.css'
 import { useState, useEffect } from 'react';
 import SkillsSection from '../components/SkillsSection.js'
+import Featured from '../components/Featured.js';
 const headerVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
@@ -95,9 +96,12 @@ const HeroSection = () => {
         <About/>   
         </div>
 
-        { <div className='skills'>
+        <div className='skills'>
           <SkillsSection/>
-        </div>   }
+        </div>   
+<div className='featured'>
+  <Featured />
+</div>
     </header>
 
   );

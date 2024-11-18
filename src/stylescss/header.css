@@ -190,6 +190,28 @@ margin-bottom:0px;
   [data-theme="dark"] body{
     background-color: #000000;
   }
+
+
+  .featured {
+    position: absolute;
+    top: calc(100% + 990px); /* Position relative to Skills */
+    width: 100%;
+    max-width: 100%;
+
+    font-family: "Roboto", "Sans-serif";
+    background-color: #ffffff;
+    z-index: -1;
+  }
+  [data-theme="dark"] .featured {
+    position: absolute;
+    top: calc(100% + 990px); /* Position relative to Skills */
+    width: 100%;
+    max-width: 100%;
+
+    font-family: "Roboto", "Sans-serif";
+    background-color: #000000;
+    z-index: -1;
+  }
  
     /* Animation keyframes for Bounce */
     @keyframes bounce {
