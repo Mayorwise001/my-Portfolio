@@ -1,0 +1,38 @@
+.container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  
+  .email-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #c451e7, #182848);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+
+
+  .social-icons a {
+    margin: 0 10px;
+  }
+  
+  .social-icons .fa-icon {
+    font-size: 22px;
+    color: #9e3c3c; /* Or any desired color */
+  }
+  .social-icons a:hover {
+    font-size: 22px;
+    color: #08518d; /* Or any desired color */
+  }

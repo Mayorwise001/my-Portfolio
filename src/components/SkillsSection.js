@@ -4,7 +4,7 @@ import styles from '../stylescss/SkillsSection.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faHtml5, faCss3Alt, faSass, faJsSquare, faReact, faNode, faGitAlt, faGithub, faFigma, faLinux, } from '@fortawesome/free-brands-svg-icons';
-import { faCube, faDatabase, faVial, faPaintBrush, faMagic, faFire } from '@fortawesome/free-solid-svg-icons';
+import { faCube, faDatabase, faVial, faPaintBrush, faMagic, faFire, faCode } from '@fortawesome/free-solid-svg-icons';
 
 
 const SkillsSection = () => {
@@ -16,7 +16,7 @@ const SkillsSection = () => {
       <div className={styles.skillsCategories}>
         {/* Front-end Skills */}
         <div className={styles.skillsCategory}>
-          <h3>Front-end</h3>
+          <h3>Front-End</h3>
           <div className={styles.skillsItems}>
             <SkillItem icon={faHtml5} label="HTML" />
             <SkillItem icon={faCss3Alt} label="CSS" />
@@ -28,12 +28,14 @@ const SkillsSection = () => {
             <SkillItem icon={faJsSquare} label="TypeScript" /> */}
             <SkillItem icon={faPaintBrush} label="Styled Components" />
             <SkillItem icon={faMagic} label="Framer Motion" />
-          </div>
+</div>
+
+          
         </div>
 
         {/* Back-end Skills */}
         <div className={styles.skillsCategory}>
-          <h3>Back-end</h3>
+          <h3>Back-End</h3>
           <div className={styles.skillsItems}>
             <SkillItem icon={faNode} label="Node.js" />
             <SkillItem icon={faJsSquare} label="JavaScript" />
@@ -41,6 +43,9 @@ const SkillsSection = () => {
             <SkillItem icon={faDatabase} label="MongoDB" />
             <SkillItem icon={faCube} label="Pug / Jade" />
             <SkillItem icon={faVial} label="Jest" />
+            <i class="devicon-express-original"></i>
+
+            <span>Express</span>
           </div>
         </div>
 
@@ -53,12 +58,13 @@ const SkillsSection = () => {
             {/* <SkillItem icon={faFire} label="Firebase" /> */}
             <SkillItem icon={faCube} label="Webpack" />
             <SkillItem icon={faLinux} label="Linux" />
+            <SkillItem icon={faCode} label="Visual Studio Code" />
           </div>
         </div>
       </div>
 
       <div className={styles.languages}>
-        <p>I speak <span>English</span></p>
+        <span className={styles.hello}>Say Hello</span>
       </div>
     </section>
   );
