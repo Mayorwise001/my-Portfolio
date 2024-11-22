@@ -29,7 +29,7 @@ const HeroSection = () => {
   //   if (aboutSection) {
   //     aboutSection.scrollIntoView({ behavior: 'smooth' });
   //   }
-
+  const [isHomeActive, setIsHomeActive] = useState(false);
   const [aboutVisible, setAboutVisible] = useState(false);
   const [isAboutActive, setIsAboutActive] = useState(false);
   const [isSkillsActive, setIsSkillsActive] = useState(false);
@@ -92,6 +92,7 @@ const HeroSection = () => {
   useEffect(() => {
     const handleScroll = () => {
       const sections = [
+        { id: 'home', setActive: setIsHomeActive },
         { id: 'about', setActive: setIsAboutActive },
         { id: 'skills', setActive: setIsSkillsActive },
         { id: 'featured', setActive: setIsFeaturedActive },
@@ -127,7 +128,7 @@ const HeroSection = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   return (
-    <header className="hero">
+    <header className="hero" id="home">
       <div className="hero-text">
       <motion.h1
           initial="hidden"
@@ -155,6 +156,15 @@ const HeroSection = () => {
       </div>
       <div className="items-right">
       <ThemeToggle />
+      <div>
+    <a
+      href="#home"
+      style={{ color: isHomeActive ? 'red' : 'inherit' }}
+      onClick={() => handleScrollToSection('home')}
+    >
+      Home
+    </a>
+  </div>
       <div>
       <a href='#about' style={{ color: isAboutActive ? 'red' : 'inherit' }}
       
@@ -199,7 +209,7 @@ const HeroSection = () => {
 <div className='featured' id="featured">
   <Featured />
 
-  <div id="contact">
+  <div id="contact" className='contacts'>
   <Contact/>
   </div>
   

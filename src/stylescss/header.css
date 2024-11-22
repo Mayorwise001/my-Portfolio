@@ -82,7 +82,14 @@
     scroll-behavior: smooth;
   }
   
-  
+  #home,
+#about,
+#skills,
+#featured,
+#contact {
+  padding: 2rem 0; /* Add spacing to avoid overlapping */
+  scroll-margin-top: 10px; /* Ensure a clear view after scrolling */
+}
   /* Container for the roles */
 .developer-roles {
   position: relative;

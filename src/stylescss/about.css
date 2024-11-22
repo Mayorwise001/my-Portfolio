@@ -224,7 +224,7 @@ font-size: 38px;
   }
   @media (max-width: 420px) {
     .hero-text {
-      font-size: 18px;
+      font-size: 5px;
     }
 
     .about{
@@ -291,6 +291,21 @@ font-size: 38px;
     font-style: bold;
 }
 
+.hero-head{
+  font-size: 2rem;
+}
 
+.container{
+
+max-width: 100%;
+width: 200px;
+  margin:auto
+}
+.container .email-link{
+  font-size: 10px; 
+  max-width: 100%;
+width: 200px;
+
+}
   
   }
