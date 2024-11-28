@@ -64,7 +64,7 @@ const SkillsSection = () => {
       </div>
 
       <div className={styles.languages}>
-        <span className={styles.hello}>Say Hello</span>
+        <span className={styles.hello}><a href="#contact">Say Hello</a></span>
       </div>
     </section>
   );

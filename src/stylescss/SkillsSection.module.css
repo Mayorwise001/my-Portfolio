@@ -152,7 +152,9 @@
    cursor: pointer;
   }
 
-
+.hello a{
+  color: white;
+}
 
   
   [data-theme="dark"] .btn::before {
