@@ -20,15 +20,7 @@ const headerVariants = {
 };
 
 const HeroSection = () => {
-  // const [aboutVisible, setAboutVisible] = useState(false);
-  // const [isAboutActive, setIsAboutActive] = useState(false);
-  // const [isAboutVisible, setIsAboutVisible] = useState(false);
-  // const handleScrollIconClick = () => {
-  //   setAboutVisible(true);
-  //   const aboutSection = document.getElementById('about');
-  //   if (aboutSection) {
-  //     aboutSection.scrollIntoView({ behavior: 'smooth' });
-  //   }
+
   const [isHomeActive, setIsHomeActive] = useState(false);
   const [aboutVisible, setAboutVisible] = useState(false);
   const [isAboutActive, setIsAboutActive] = useState(false);
@@ -39,55 +31,10 @@ const HeroSection = () => {
   const handleScrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
   }
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const aboutSection = document.getElementById('about');
-  //     if (aboutSection) {
-  //       const rect = aboutSection.getBoundingClientRect();
-  //       // Check if the about section is in view
-  //       const inView = rect.top >= 0 && rect.bottom <= window.innerHeight;
-  //       setIsAboutActive(inView);
 
-  //       if (rect.top < window.innerHeight && rect.bottom >= 0) {
-  //         setIsAboutVisible(true);
-  //       } else {
-  //         setIsAboutVisible(false);
-  //       }
-  //     }
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   // Cleanup the scroll event listener on component unmount
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // }, []);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const checkActiveSection = (id, setActiveState) => {
-  //       const section = document.getElementById(id);
-  //       if (section) {
-  //         const rect = section.getBoundingClientRect();
-          // const inView = rect.top >= 0 && rect.bottom <= window.innerHeight;
-    //       const inView = rect.top < window.innerHeight && rect.bottom > 0;
-    //       setActiveState(inView);
-    //     }
-    //   };
-
-    //   checkActiveSection('about', setIsAboutActive);
-    //   checkActiveSection('skills', setIsSkillsActive);
-    //   checkActiveSection('featured', setIsFeaturedActive);
-    //   checkActiveSection('contact', setIsContactActive);
-    // };
-
-    // window.addEventListener('scroll', handleScroll);
-
-    // Cleanup the scroll event listener on component unmount
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -115,6 +62,7 @@ const HeroSection = () => {
   
           // Reset all sections to inactive
           setActive(false);
+          
         }
       });
   
@@ -199,7 +147,7 @@ const HeroSection = () => {
         <img src={photo} alt="Scroll Icon"/>
         </a>
         </div>
-        <div className={`about ${aboutVisible ? 'visible' : ''}`}  id='about'>
+        <div className={`about ${aboutVisible ? 'visible' : ''}`}  id="about">
         <About/>   
         </div>
 

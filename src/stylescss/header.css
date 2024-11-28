@@ -82,12 +82,12 @@
     scroll-behavior: smooth;
   }
   
-  #home,
+#home,
 #about,
 #skills,
 #featured,
 #contact {
-  padding: 2rem 0; /* Add spacing to avoid overlapping */
+  padding: 0 0; /* Add spacing to avoid overlapping */
   scroll-margin-top: 10px; /* Ensure a clear view after scrolling */
 }
   /* Container for the roles */
@@ -118,9 +118,7 @@
   right: 0;
   opacity: 0;
   transform: skew(-10deg) rotate(-2deg); /* Same effect on roles */
-  animation: fadeInOut 12s infinite; /* Infinite loop of fading animation */
-  
-  
+  animation: fadeInOut 12s infinite; /* Infinite loop of fading animation */  
 }  
 
 /* First role starts visible */
@@ -169,7 +167,7 @@
 color: black;
 min-width: 100%;
 flex: 1;
-scroll-margin-top: 200px;
+scroll-margin-top: 10px;
  }
     
  [data-theme="dark"]  .about{

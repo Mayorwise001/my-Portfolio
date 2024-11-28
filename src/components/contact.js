@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import '../stylescss/contact.css'
 
@@ -16,6 +16,14 @@ const Contact =()=>{
         <a href="https://www.linkedin.com/in/mayowatomosori/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: '2rem' }} />
         </a>
+
+        <a 
+      href="https://wa.me/+2348130274215" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <FontAwesomeIcon icon={faWhatsapp} style={{ fontSize: '2rem', color: 'green' }} />
+    </a>
       </div>
     </div>
         </>

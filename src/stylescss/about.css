@@ -163,11 +163,13 @@ font-size: 38px;
       font-style: bold;
   }
   .featured {
-    margin-top: 200px;
+    margin-top: 350px;
     position: absolute;
   }
 
   }
+  
+
   
   @media (max-width: 480px) {
     .hero-text {
@@ -186,7 +188,10 @@ font-size: 38px;
       width: 89%;
       z-index: -1; /* Lower z-index to push it behind */       
   }
-
+  .featured {
+    margin-top: 370px;
+    position: absolute;
+  }
 
     html, body {
       margin: 0;
