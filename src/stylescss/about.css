@@ -46,8 +46,7 @@ font-size: 38px;
   }
 
 
-
-
+  
   
   @media (max-width: 768px) {
     .items-right {
@@ -86,12 +85,21 @@ font-size: 38px;
     position: absolute;
     top: calc(100% + 1300px); /* Position relative to Skills */
   }
+  [data-theme="dark"] .featured {
+    /* margin-top: 300px; */
+    position: absolute;
+    top: calc(100% + 1300px); /* Position relative to Skills */
+  }
 
 }
 
 @media (max-width: 1020px){
   .featured {
     margin-top: 50px;
+    position: absolute;
+  }
+  [data-theme="dark"].featured {
+    margin-top: 100px;
     position: absolute;
   }
 }
@@ -124,6 +132,10 @@ font-size: 38px;
 
       .featured {
         margin-top: 400px;
+        position: absolute;
+      }
+      [data-theme="dark"] .featured {
+        margin-top: 720px;
         position: absolute;
       }
 
@@ -167,10 +179,15 @@ font-size: 38px;
     position: absolute;
   }
 
+  [data-theme="dark"] .featured {
+    margin-top: 670px;
+    position: absolute;
+  }
+
   }
   
 
-  
+
   @media (max-width: 480px) {
     .hero-text {
       font-size: 18px;
@@ -189,6 +206,10 @@ font-size: 38px;
       z-index: -1; /* Lower z-index to push it behind */       
   }
   .featured {
+    margin-top: 370px;
+    position: absolute;
+  }
+  [data-theme="dark"] .featured {
     margin-top: 370px;
     position: absolute;
   }
@@ -213,6 +234,9 @@ font-size: 38px;
   }
 
   .skills{
+    margin-top: 150px;
+  }
+  [data-theme="dark"] .skills{
     margin-top: 150px;
   }
 

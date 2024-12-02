@@ -3,7 +3,7 @@ import React from 'react';
 import styles from '../stylescss/SkillsSection.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { faHtml5, faCss3Alt, faSass, faJsSquare, faReact, faNode, faGitAlt, faGithub, faFigma, faLinux, } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3Alt, faSass, faJsSquare, faReact, faNode, faGitAlt, faGithub, faFigma, faLinux, faWordpress} from '@fortawesome/free-brands-svg-icons';
 import { faCube, faDatabase, faVial, faPaintBrush, faMagic, faFire, faCode } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -28,6 +28,7 @@ const SkillsSection = () => {
             <SkillItem icon={faJsSquare} label="TypeScript" /> */}
             <SkillItem icon={faPaintBrush} label="Styled Components" />
             <SkillItem icon={faMagic} label="Framer Motion" />
+            <SkillItem icon={faWordpress} label="WordPress" />
 </div>
 
           
@@ -44,6 +45,7 @@ const SkillsSection = () => {
             <SkillItem icon={faCube} label="Pug / Jade" />
             <SkillItem icon={faVial} label="Jest" />
             <i class="devicon-express-original"></i>
+            <SkillItem icon={faWordpress} label="WordPress" />
 
             <span>Express</span>
           </div>
@@ -59,6 +61,7 @@ const SkillsSection = () => {
             <SkillItem icon={faCube} label="Webpack" />
             <SkillItem icon={faLinux} label="Linux" />
             <SkillItem icon={faCode} label="Visual Studio Code" />
+            <SkillItem icon={faWordpress} label="WordPress" />
           </div>
         </div>
       </div>

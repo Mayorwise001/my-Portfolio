@@ -6,6 +6,7 @@ import JobApp from '../images/JobPortalApp.PNG'
 import JobUsers from '../images//Job Posting APP.PNG'
 import ShopCart from '../images/shopping cart.PNG'
 import chat from '../images/mayorwise chat app.PNG'
+import sceptre from '../images/sceptre chemicals.PNG'
 
 const Featured =()=>{
 
@@ -36,18 +37,25 @@ This tool demonstrates expertise in backend development, database integration, a
   </div>
   <div class="project2">
     <div class="project-details2">
-      <h3>Advanced Job Management Backend System</h3>
-      <p class="subtitle">Advanced Job Management Backend System</p>
+      <h3>Advanced Job Management Admin Portal</h3>
+      <p class="subtitle">Advanced Job Management Admin Portal</p>
       <p>
       
 
-This backend application is a powerful solution for administering job portals, offering seamless management of 
-job postings and user accounts. Administrators can create and categorize job listings, define custom job categories, 
-and manage all registered users. The system incorporates secure password updates and user authentication to ensure 
-data privacy and reliability.
+      The Advanced Job Management Admin Portal is a React-based application built to provide administrators with a seamless interface for managing job portals. Using Axios for API communication, the portal streamlines the process of creating and categorizing job listings, defining custom job categories, and overseeing user accounts.
 
-Built with Express.js, Node.js, MongoDB, JWT Authentication, Passport, and Bcrypt, this project demonstrates 
-expertise in scalable server-side development, robust security protocols, and database management—making it an essential tool for modern recruitment platforms.
+Key features include:<br></br>
+
+<br></br>
+
+1. Job Management: Easily create, update, and delete job postings.
+Category Customization: Define and organize jobs into custom categories for better organization.<br></br>
+
+2. User Administration: Manage registered users with options for secure account updates and deletion.<br></br>
+
+3. Data Security: Robust authentication mechanisms ensure user data privacy, leveraging secure password updates and validation.<br></br>
+
+<br></br>The portal demonstrates expertise in frontend development with React, effective API integration with Axios, and user-focused UI/UX design. It is an essential tool for efficient job portal administration.
       </p>
 
  
@@ -130,6 +138,25 @@ With a focus on individual profile management, the app showcases seamless integr
       <img src={chat} alt="Blog Application Preview" />
     </div>
   </div>
+
+  <div class="project2">
+    <div class="project-details2">
+    <h3>Website for Sceptre Chemicals</h3>
+      <p class="subtitle">Built with WordPress</p>
+      <p>
+The Sceptre Chemicals website is a professionally designed platform built with WordPress, tailored to showcase the company's services and expertise. It serves as an informative hub, providing detailed insights into the wide range of chemical solutions offered by Sceptre Chemicals. With a clean and intuitive layout, the website ensures a user-friendly experience, enabling visitors to easily access service information and connect with the company.
+      </p>
+
+ 
+      <div class="buttons">
+      <a href="https://sceptrechemicals.org/" class="btn live-preview">Live Preview</a>
+      </div>
+    </div>
+    <div class="project-image2">
+      <img src={sceptre} alt="Sceptre website preview" />
+    </div>
+  </div>
+
 
 </section>
 
