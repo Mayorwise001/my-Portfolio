@@ -7,7 +7,9 @@ import '../stylescss/about.css'
 import { useState, useEffect } from 'react';
 import SkillsSection from '../components/SkillsSection.js'
 import Featured from '../components/Featured.js';
-import Contact from '../components/contact.js'
+import Contact from '../components/contact.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 
 const headerVariants = {
@@ -125,7 +127,9 @@ const HeroSection = () => {
             href="#skills"
             style={{ color: isSkillsActive ? 'red' : 'inherit' }}
             onClick={() => handleScrollToSection('skills')}
-          >Skills</a>
+          > <span className="nav-label">Skills</span>
+          <FontAwesomeIcon icon={faCode} className="nav-icon" />
+          </a>
           </div>
       <div>          <a
             href="#featured"
@@ -147,20 +151,22 @@ const HeroSection = () => {
         <img src={photo} alt="Scroll Icon"/>
         </a>
         </div>
-        <div className={`about ${aboutVisible ? 'visible' : ''}`}  id="about">
-        <About/>   
-        </div>
 
+        <div className={`abouts ${aboutVisible ? 'visible' : ''}`}  id="about">
+        <About/>   
+        </div>  
         <div className='skills' id="skills">
           <SkillsSection/>
-        </div>   
+        </div> 
+
+
 <div className='featured' id="featured">
   <Featured />
 
   <div id="contact" className='contacts'>
   <Contact/>
   </div>
-  
+
 </div>
 
 

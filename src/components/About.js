@@ -3,7 +3,7 @@
 
 const About =()=>{
     return(
-        <div className="about">
+        <div className="about-us">
             <h2>About Me</h2>
             <p>I am a full-stack web developer with a passion for building visually stunning and highly functional applications.</p>
                 

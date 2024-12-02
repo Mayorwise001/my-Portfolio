@@ -83,7 +83,7 @@
   }
   
 #home,
-#about,
+#abouts,
 #skills,
 #featured,
 #contact {
@@ -162,7 +162,7 @@
      color: white;
     } 
 
- .about{
+ .abouts{
   background-color: #ffffff;
 color: black;
 min-width: 100%;
@@ -170,7 +170,7 @@ flex: 1;
 scroll-margin-top: 10px;
  }
     
- [data-theme="dark"]  .about{
+ [data-theme="dark"]  .abouts{
   background-color: #000000;
 color: rgb(255, 255, 255);
 min-width: 100%;
@@ -224,7 +224,14 @@ margin-bottom:0px;
   }
  
 
-
+  .nav-label {
+    margin-left: 0.5rem;
+  }
+  
+  .nav-icon {
+    display: none; /* Default: hide icons */
+    font-size: 1.5rem;
+  }
 
     /* Animation keyframes for Bounce */
     @keyframes bounce {
