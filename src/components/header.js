@@ -9,7 +9,7 @@ import SkillsSection from '../components/SkillsSection.js'
 import Featured from '../components/Featured.js';
 import Contact from '../components/contact.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faProjectDiagram, faEnvelope, faHome, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
 
 const headerVariants = {
@@ -112,7 +112,8 @@ const HeroSection = () => {
       style={{ color: isHomeActive ? 'red' : 'inherit' }}
       onClick={() => handleScrollToSection('home')}
     >
-      Home
+          <FontAwesomeIcon icon={faHome} className="nav-icon" />
+          <span className="nav-label">Home</span>
     </a>
   </div>
       <div>
@@ -120,7 +121,8 @@ const HeroSection = () => {
       
       onClick={() => handleScrollToSection('about')}
       >
-      About
+         <FontAwesomeIcon icon={faInfoCircle} className="nav-icon" />
+         <span className="nav-label">About</span>
         </a>
       </div>
       <div>          <a
@@ -135,14 +137,18 @@ const HeroSection = () => {
             href="#featured"
             style={{ color: isFeaturedActive ? 'red' : 'inherit' }}
             onClick={() => handleScrollToSection('featured')}
-          >Projects</a>
+            className="nav-link"
+            >
+              <span className="nav-label">Projects</span>
+              <FontAwesomeIcon icon={faProjectDiagram} className="nav-icon" /></a>
           </div>
       <div>
       <a
             href="#contact"
             style={{ color: isContactActive ? 'red' : 'inherit' }}
             onClick={() => handleScrollToSection('contact')}
-          >Contact</a>
+            className="nav-link">          <span className="nav-label">Contact</span>
+          <FontAwesomeIcon icon={faEnvelope} className="nav-icon" /></a>
           </div>
     </div>
     {/* <div class="scroll-icon" onClick={handleScrollIconClick}> */}
