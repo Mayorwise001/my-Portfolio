@@ -7,6 +7,7 @@ import JobUsers from '../images//Job Posting APP.PNG'
 import ShopCart from '../images/shopping cart.PNG'
 import chat from '../images/mayorwise chat app.PNG'
 import sceptre from '../images/sceptre chemicals.PNG'
+import product from '../images/products.PNG'
 
 const Featured =()=>{
 
@@ -157,6 +158,24 @@ The Sceptre Chemicals website is a professionally designed platform built with W
     </div>
   </div>
 
+  <div class="project">
+    <div class="project-details">
+      <h3>Hola Agro</h3>
+      <p class="subtitle">Built with Wordpress</p>
+      <p>
+      Hola Agro Allied is a leading agro-trading company dedicated to the exportation of premium agricultural products. We pride ourselves on connecting farmers and suppliers to global markets, ensuring the seamless flow of fresh, high-quality produce across borders. With a commitment to excellence, sustainability, and innovation, we aim to strengthen the agricultural value chain while fostering growth and prosperity for all our stakeholders. At Hola Agro Allied, we are passionate about delivering the best of agriculture to the world.
+      </p>
+
+ 
+
+      <div class="buttons">
+      <a href="https://holaagroallied.com.ng/" class="btn live-preview">Live Preview</a>
+      </div>
+    </div>
+    <div class="project-image">
+      <img src={product} alt="Blog Application Preview" />
+    </div>
+  </div>
 
 </section>
 
